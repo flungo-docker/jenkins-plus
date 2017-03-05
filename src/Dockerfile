@@ -7,6 +7,10 @@ ARG user=jenkins
 # Change to root
 USER root
 
-RUN apk add --update graphviz
+# Upgrade to edge branch
+RUN sed -i -e 's/v[0-9]\.[0-9]/edge/g' /etc/apk/repositories
+RUN apk upgrade --update-cache --available
+
+RUN apk add --update cloc graphviz
 
 USER ${user}

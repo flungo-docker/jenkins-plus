@@ -1,6 +1,8 @@
 # Jenkins Plus
 
 An extension of the official [Jenkins docker image](https://hub.docker.com/_/jenkins/) providing additional tools and utilities installed to assist with builds. This is based on the alpine tag of the Jenkins image and adds the following packages:
+
+- cloc
 - graphviz
 
 Unless you need these tools, the Jenkins image from the docker library should satisfy your needs.
