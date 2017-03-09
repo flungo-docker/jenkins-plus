@@ -12,7 +12,7 @@ Unless you need these tools, the Jenkins image from the docker library should sa
 To build this docker image, simply run:
 
 ```
-docker build -t flungo/jenkins-plus src/
+docker build -t flungo/jenkins-plus:alpine src/alpine
 ```
 
 ## Usage
