@@ -1,6 +1,6 @@
 # Jenkins Plus
 
-An extension of the official [Jenkins docker image](https://hub.docker.com/_/jenkins/) providing additional tools and utilities installed to assist with builds. This is based on the alpine tag of the Jenkins image and adds the following packages:
+An extension of the official [Jenkins docker image](https://hub.docker.com/_/jenkins/) providing additional tools and utilities installed to assist with builds. Images are provided for both the `latest` and `alpine` tags of the Jenkins image, both containing the following extra packages:
 
 - cloc
 - graphviz
@@ -10,6 +10,12 @@ Unless you need these tools, the Jenkins image from the docker library should sa
 ## Build
 
 To build this docker image, simply run:
+
+```
+docker build -t flungo/jenkins-plus src/latest
+```
+
+For the alpine image:
 
 ```
 docker build -t flungo/jenkins-plus:alpine src/alpine
